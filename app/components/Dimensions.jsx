@@ -3,9 +3,8 @@ import converterData from '../data/data.json';
 const Dimensions = ({ onSelectDimension }) => {
     const dimensions = Object.keys(converterData);
 
-    const handleDimensionChange = (event) => {
-        const selectedDimension = event.target.value;
-        onSelectDimension(selectedDimension);
+    const handleDimensionChange = (e) => {
+        onSelectDimension(e.target.value);
     };
 
     const dimensionOptions = dimensions.map((dimension) => (

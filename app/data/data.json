@@ -6,42 +6,42 @@
             "meter": {
                 "name": "Meter",
                 "symbol": "m",
-                "conversion_to_meter": 1
+                "conversion_ratio": 1
             },
             "kilometer": {
                 "name": "Kilometer",
                 "symbol": "km",
-                "conversion_to_meter": 1000
+                "conversion_ratio": 1000
             },
             "centimeter": {
                 "name": "Centimeter",
                 "symbol": "cm",
-                "conversion_to_meter": 0.01
+                "conversion_ratio": 0.01
             },
             "millimeter": {
                 "name": "Millimeter",
                 "symbol": "mm",
-                "conversion_to_meter": 0.001
+                "conversion_ratio": 0.001
             },
             "inch": {
                 "name": "Inch",
                 "symbol": "in",
-                "conversion_to_meter": 0.0254
+                "conversion_ratio": 0.0254
             },
             "foot": {
                 "name": "Foot",
                 "symbol": "ft",
-                "conversion_to_meter": 0.3048
+                "conversion_ratio": 0.3048
             },
             "yard": {
                 "name": "Yard",
                 "symbol": "yd",
-                "conversion_to_meter": 0.9144
+                "conversion_ratio": 0.9144
             },
             "mile": {
                 "name": "Mile",
                 "symbol": "mi",
-                "conversion_to_meter": 1609.34
+                "conversion_ratio": 1609.34
             }
         }
     },

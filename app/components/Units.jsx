@@ -1,7 +1,11 @@
 import converterData from '../data/data.json';
 
-const Units = ({ dimension, defaultUnit }) => {
+const Units = ({ dimension, defaultUnit, onSelectUnit }) => {
     const units = Object.values(converterData[dimension].units);
+
+    const handleUnitChange = (e) => {
+        onSelectUnit(e.target.value);
+    };
 
     const unitOptions = units.map((unit) => (
         <option key={unit.symbol} value={unit.name}>
@@ -12,7 +16,8 @@ const Units = ({ dimension, defaultUnit }) => {
     return (
         <select
             className='select select-bordered select-sm'
-            value={converterData[dimension].default[Number(defaultUnit)]}
+            defaultValue={converterData[dimension].default[Number(defaultUnit)]}
+            onChange={handleUnitChange}
         >
             {unitOptions}
         </select>
