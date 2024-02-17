@@ -1,68 +1,169 @@
 {
     "length": {
         "name": "Length",
-        "default": ["Meter", "Centimeter"],
+        "default": ["meter", "centimeter"],
+        "base": "meter",
         "units": {
             "meter": {
-                "name": "Meter",
+                "displayName": "Meter",
+                "name": "meter",
                 "symbol": "m",
-                "conversion_ratio": 1
+                "conversion_from_base": "(value)",
+                "conversion_to_base": "(value)"
             },
             "kilometer": {
-                "name": "Kilometer",
+                "displayName": "Kilometer",
+                "name": "kilometer",
                 "symbol": "km",
-                "conversion_ratio": 1000
+                "conversion_from_base": "(value) * 0.001",
+                "conversion_to_base": "(value) / 0.001"
             },
             "centimeter": {
-                "name": "Centimeter",
+                "displayName": "Centimeter",
+                "name": "centimeter",
                 "symbol": "cm",
-                "conversion_ratio": 0.01
+                "conversion_from_base": "(value) * 100",
+                "conversion_to_base": "(value) / 100"
             },
             "millimeter": {
-                "name": "Millimeter",
+                "displayName": "Millimeter",
+                "name": "millimeter",
                 "symbol": "mm",
-                "conversion_ratio": 0.001
+                "conversion_from_base": "(value) * 1000",
+                "conversion_to_base": "(value) / 1000"
             },
             "inch": {
-                "name": "Inch",
+                "displayName": "Inch",
+                "name": "inch",
                 "symbol": "in",
-                "conversion_ratio": 0.0254
+                "conversion_from_base": "(value) * 39.3701",
+                "conversion_to_base": "(value) / 39.3701"
             },
             "foot": {
-                "name": "Foot",
+                "displayName": "Foot",
+                "name": "foot",
                 "symbol": "ft",
-                "conversion_ratio": 0.3048
+                "conversion_from_base": "(value) / 0.3048",
+                "conversion_to_base": "(value) * 0.3048"
             },
             "yard": {
-                "name": "Yard",
+                "displayName": "Yard",
+                "name": "yard",
                 "symbol": "yd",
-                "conversion_ratio": 0.9144
+                "conversion_from_base": "(value) / 1.09361",
+                "conversion_to_base": "(value) * 1.09361"
             },
             "mile": {
-                "name": "Mile",
+                "displayName": "Mile",
+                "name": "mile",
                 "symbol": "mi",
-                "conversion_ratio": 1609.34
+                "conversion_from_base": "(value) / 0.000621371",
+                "conversion_to_base": "(value) * 0.000621371"
             }
         }
     },
     "temperature": {
         "name": "Temperature",
-        "default": ["Celsius", "Fahrenheit"],
+        "default": ["celsius", "fahrenheit"],
+        "base": "celsius",
         "units": {
             "celsius": {
-                "name": "Celsius",
+                "displayName": "Celsius",
+                "name": "celsius",
                 "symbol": "C",
-                "conversion_to_celsius": 1
+                "conversion_from_base": "(value)",
+                "conversion_to_base": "(value)"
             },
             "kelvin": {
-                "name": "Kelvin",
+                "displayName": "Kelvin",
+                "name": "kelvin",
                 "symbol": "K",
-                "conversion_to_celsius": -272.15
+                "conversion_from_base": "(value) + 273.15",
+                "conversion_to_base": "(value) - 273.15"
             },
             "fahrenheit": {
-                "name": "Fahrenheit",
+                "displayName": "Fahrenheit",
+                "name": "fahrenheit",
                 "symbol": "F",
-                "conversion_to_celsius": -17.7778
+                "conversion_from_base": "((value) * 9/5) + 32",
+                "conversion_to_base": "((value) - 32) * 5/9"
+            }
+        }
+    },
+    "area": {
+        "name": "Area",
+        "default": ["square_meter", "square_kilometer"],
+        "base": "square_meter",
+        "units": {
+            "square_meter": {
+                "displayName": "Square Meter",
+                "name": "square_meter",
+                "symbol": "m²",
+                "conversion_from_base": "(value)",
+                "conversion_to_base": "(value)"
+            },
+            "square_kilometer": {
+                "displayName": "Square Kilometer",
+                "name": "square_kilometer",
+                "symbol": "km²",
+                "conversion_from_base": "(value) * 1e-6",
+                "conversion_to_base": "(value) / 1e-6"
+            },
+            "square_centimeter": {
+                "displayName": "Square Centimeter",
+                "name": "square_centimeter",
+                "symbol": "cm²",
+                "conversion_from_base": "(value) * 1e4",
+                "conversion_to_base": "(value) / 1e4"
+            },
+            "square_millimeter": {
+                "displayName": "Square Millimeter",
+                "name": "square_millimeter",
+                "symbol": "mm²",
+                "conversion_from_base": "(value) * 1e6",
+                "conversion_to_base": "(value) / 1e6"
+            },
+            "square_inch": {
+                "displayName": "Square Inch",
+                "name": "square_inch",
+                "symbol": "in²",
+                "conversion_from_base": "(value) * 1550",
+                "conversion_to_base": "(value) / 1550"
+            },
+            "square_foot": {
+                "displayName": "Square Foot",
+                "name": "square_foot",
+                "symbol": "ft²",
+                "conversion_from_base": "(value) * 10.7639",
+                "conversion_to_base": "(value) / 10.7639"
+            },
+            "square_yard": {
+                "displayName": "Square Yard",
+                "name": "square_yard",
+                "symbol": "yd²",
+                "conversion_from_base": "(value) * 1.19599",
+                "conversion_to_base": "(value) / 1.19599"
+            },
+            "square_mile": {
+                "displayName": "Square Mile",
+                "name": "square_mile",
+                "symbol": "mi²",
+                "conversion_from_base": "(value) * 3.861e6",
+                "conversion_to_base": "(value) / 3.861e6"
+            },
+            "acre": {
+                "displayName": "Acre",
+                "name": "acre",
+                "symbol": "ac",
+                "conversion_from_base": "(value) * 0.000247105",
+                "conversion_to_base": "(value) / 0.000247105"
+            },
+            "hectare": {
+                "displayName": "Hectare",
+                "name": "hectare",
+                "symbol": "ha",
+                "conversion_from_base": "(value) * 0.0001",
+                "conversion_to_base": "(value) / 0.0001"
             }
         }
     }
