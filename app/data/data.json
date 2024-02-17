@@ -2,67 +2,80 @@
     "length": {
         "name": "Length",
         "default": ["Meter", "Centimeter"],
+        "base": "meter",
         "units": {
             "meter": {
                 "name": "Meter",
                 "symbol": "m",
-                "conversion_ratio": 1
+                "conversion_from_base": "(value)",
+                "conversion_to_base": "(value)"
             },
             "kilometer": {
                 "name": "Kilometer",
                 "symbol": "km",
-                "conversion_ratio": 1000
+                "conversion_from_base": "(value) * 0.001",
+                "conversion_to_base": "(value) / 0.001"
             },
             "centimeter": {
                 "name": "Centimeter",
                 "symbol": "cm",
-                "conversion_ratio": 0.01
+                "conversion_from_base": "(value) * 100",
+                "conversion_to_base": "(value) / 100"
             },
             "millimeter": {
                 "name": "Millimeter",
                 "symbol": "mm",
-                "conversion_ratio": 0.001
+                "conversion_from_base": "(value) * 1000",
+                "conversion_to_base": "(value) / 1000"
             },
             "inch": {
                 "name": "Inch",
                 "symbol": "in",
-                "conversion_ratio": 0.0254
+                "conversion_from_base": "(value) * 39.3701",
+                "conversion_to_base": "(value) / 39.3701"
             },
             "foot": {
                 "name": "Foot",
                 "symbol": "ft",
-                "conversion_ratio": 0.3048
+                "conversion_from_base": "(value) / 0.3048",
+                "conversion_to_base": "(value) * 0.3048"
             },
             "yard": {
                 "name": "Yard",
                 "symbol": "yd",
-                "conversion_ratio": 0.9144
+                "conversion_from_base": "(value) / 1.09361",
+                "conversion_to_base": "(value) * 1.09361"
             },
             "mile": {
                 "name": "Mile",
                 "symbol": "mi",
-                "conversion_ratio": 1609.34
+                "conversion_from_base": "(value) / 0.000621371",
+                "conversion_to_base": "(value) * 0.000621371"
             }
         }
     },
     "temperature": {
         "name": "Temperature",
         "default": ["Celsius", "Fahrenheit"],
+        "base": "celsius",
         "units": {
             "celsius": {
                 "name": "Celsius",
                 "symbol": "C",
-                "conversion_to_celsius": 1
+                "conversion_from_base": "(value)",
+                "conversion_to_base": "(value)"
             },
             "kelvin": {
                 "name": "Kelvin",
                 "symbol": "K",
-                "conversion_to_celsius": -272.15
+                "conversion_from_base": "(value) + 273.15",
+                "conversion_to_base": "(value) - 273.15"
             },
             "fahrenheit": {
                 "name": "Fahrenheit",
                 "symbol": "F",
-                "conversion_to_celsius": -17.7778
+                "conversion_from_base": "((value) * 9/5) + 32",
+                "conversion_to_base": "((value) - 32) * 5/9"
             }
         }
     }
