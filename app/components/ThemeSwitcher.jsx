@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { TbSunMoon } from 'react-icons/tb';
 
-const themes = ['light', 'dark', 'synthwave', 'dracula', 'luxury'];
+const themes = require('../config/themes').default;
 
 const ThemeSwitcher = () => {
     const [selectedThemeIndex, setSelectedThemeIndex] = useState(0);

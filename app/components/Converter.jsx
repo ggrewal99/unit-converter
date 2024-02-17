@@ -61,6 +61,9 @@ const Converter = () => {
 
     const handleInputChange = (e, inputNumber) => {
         const value = e.target.value;
+        if (isNaN(value)) {
+            return;
+        }
         if (value === 0) {
             setInput1Value(0);
             setInput2Value(0);
