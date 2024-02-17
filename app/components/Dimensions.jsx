@@ -1,27 +1,13 @@
 import converterData from '../data/data.json';
 
-const Dimensions = ({ onSelectDimension, defaultDimension }) => {
+const Dimensions = () => {
     const dimensions = Object.keys(converterData);
 
-    const handleDimensionChange = (e) => {
-        onSelectDimension(e.target.value);
-    };
-
-    const dimensionOptions = dimensions.map((dimension) => (
+    return dimensions.map((dimension) => (
         <option key={dimension} value={dimension}>
             {converterData[dimension].name}
         </option>
     ));
-
-    return (
-        <select
-            className='select select-bordered capitalize'
-            onChange={handleDimensionChange}
-            defaultValue={defaultDimension}
-        >
-            {dimensionOptions}
-        </select>
-    );
 };
 
 export default Dimensions;
