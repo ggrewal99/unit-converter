@@ -18,7 +18,11 @@ const ThemeSwitcher = () => {
 
     return (
         <div className='flex justify-center items-center space-x-2'>
-            <button className='btn btn-primary' onClick={handleCycleThemes}>
+            <button
+                title='Theme Switcher'
+                className='btn btn-primary'
+                onClick={handleCycleThemes}
+            >
                 <TbSunMoon className='text-2xl' />
             </button>
         </div>
