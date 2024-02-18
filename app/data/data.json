@@ -50,15 +50,15 @@
                 "displayName": "Yard",
                 "name": "yard",
                 "symbol": "yd",
-                "conversion_from_base": "(value) / 1.09361",
-                "conversion_to_base": "(value) * 1.09361"
+                "conversion_from_base": "(value) * 1.09361",
+                "conversion_to_base": "(value) / 1.09361"
             },
             "mile": {
                 "displayName": "Mile",
                 "name": "mile",
                 "symbol": "mi",
-                "conversion_from_base": "(value) / 0.000621371",
-                "conversion_to_base": "(value) * 0.000621371"
+                "conversion_from_base": "(value) * 0.000621371",
+                "conversion_to_base": "(value) / 0.000621371"
             }
         }
     },
